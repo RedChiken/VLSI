@@ -184,3 +184,5 @@ bin/
 output/
 
 result\.txt
+
+*.iml
