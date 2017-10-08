@@ -46,5 +46,4 @@ public class DataManager {
 			e.printStackTrace();
 		}
 	}
-	
 }
