@@ -1,17 +1,15 @@
 import cooling.*;
 import dataStructure.TSPPath;
-import opt.ThreeOpt;
 import opt.TwoOpt;
 import route.GreedyRoute;
-import route.MelkmanRoute;
-import route.RandomRoute;
+import route.ConvexHullClusterRoute;
 import route.Route;
 
 public class MainClass {
 	public static void main(String[] args){
-		DataManager manager = new DataManager("pbd984.tsp");
+		DataManager manager = new DataManager("xqf131.tsp");
 		Route gr = new GreedyRoute(manager.getData());
-		Route mr = new MelkmanRoute(manager.getData());
+		Route mr = new ConvexHullClusterRoute(manager.getData());
 		//gr.getRoute().setOpt(new TwoOpt());
 		CoolingFunction coolingFunction[] = {new ExponentialCooling(),
 				new LinearCooling(),

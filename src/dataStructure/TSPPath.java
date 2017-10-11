@@ -31,6 +31,10 @@ public class TSPPath {
 		path.add(node);
 	}
 	
+	public void deleteNode(Node node){
+		path.remove(node);
+	}
+	
 	public Node getNode(int index){
 		return path.get(index);
 	}
